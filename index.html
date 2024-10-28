@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор стоимости услуги</title>
+  <script src="calculatorservice.js"></script>
+        <link href="calculatorservice.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <h1>Калькулятор стоимости услуги</h1>
+  <p style = "font-size: 20px">Данный калькулятор позволяет рассчитать стоимость выбранного товара по его количеству, доп. опциям и свойствам.</p>
+
+  <div>
+    <h2>Тип товара:</h2>
+    <input type="radio" id="service1" name="service" value="1" checked>
+    <label for="service1">Ластик (20 руб)</label><br>
+    <input type="radio" id="service2" name="service" value="2">
+    <label for="service2">Ручка (5 руб)</label><br>
+    <input type="radio" id="service3" name="service" value="3">
+    <label for="service3">Тетрадь(10 руб)</label>
+  </div>
+
+  <div id="options-container">
+    <h2>Опции товара:</h2>
+    <select id="options">
+      </select>
+  </div>
+
+  <div id="property-container">
+    <input type="checkbox" id="property1" name="property" value="150">
+    <label for="property"> На кольцах (+150 руб)</label>
+    <br/>
+    <input type="checkbox" id="property2" name="property" value="100">
+    <label for="property">В твердой обложке (+100 руб)</label>
+  </div><br/>
+  <div>
+    <label for="quantity">Количество товара:</label>
+    <input type="number" id="quantity" value="1" min="1">
+  </div>
+  <div>
+    <h2>Стоимость:</h2>
+    <span id="price">0</span>
+  </div>
+</body>
+</html>
